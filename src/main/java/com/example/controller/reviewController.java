@@ -16,7 +16,7 @@ public class reviewController {
     private reviewService reviewservice;
 
     @GetMapping("/")
-    public ModelAndView relist() throws Exception {
+    public ModelAndView reList() throws Exception {
         ModelAndView mav = new ModelAndView("list");
         List<reviewVo> reviewlist = reviewservice.reviewlist();
         mav.addObject("relist",reviewlist);

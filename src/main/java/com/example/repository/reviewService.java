@@ -1,7 +1,7 @@
 package com.example.repository;
 
 import com.example.domain.reviewVo;
-import com.example.mapper.reviewmapper;
+import com.example.mapper.Reviewmapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class reviewService {
 
     @Autowired
-    private reviewmapper reviewmapper;
+    private Reviewmapper reviewmapper;
 
     // 게시글 조회
     public List<reviewVo> reviewlist() throws Exception {
